@@ -1,0 +1,98 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:boor="http://www.accurate.com/acec/AcecBOSOAIntegration/BOOrderIntegration"
+                  xmlns:ord="http://www.accurate.com/acec/order">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <boor:integrateOrderRequest>
+            <ord:order>
+                <ord:orderId>1709896</ord:orderId>
+                <ord:totalAmount>410.00</ord:totalAmount>
+                <ord:totalDiscountAmount>0.00</ord:totalDiscountAmount>
+                <ord:purchaseDate>2015-10-13T15:59:46.776-03:00</ord:purchaseDate>
+                <ord:applicationVersion>ACEC_V1</ord:applicationVersion>
+                <ord:saleChannel>INT</ord:saleChannel>
+                <ord:deliveries>
+                    <ord:delivery>
+                        <ord:deliveryId>1</ord:deliveryId>
+                        <ord:orderId>1709896</ord:orderId>
+                        <ord:totalAmount>410.00</ord:totalAmount>
+                        <ord:totalDiscountAmount>0.00</ord:totalDiscountAmount>
+                        <ord:orderLineList>
+                            <ord:orderLine>
+                                <ord:sku>104472</ord:sku>
+                                <ord:skuType>SER</ord:skuType>
+                                <ord:quantity>2</ord:quantity>
+                                <ord:catalogListPrice>300.0</ord:catalogListPrice>
+                                <ord:listPrice>200.0</ord:listPrice>
+                                <ord:salePrice>200.0</ord:salePrice>
+                                <ord:unconditionalDiscountAmount>0</ord:unconditionalDiscountAmount>
+                                <ord:roundingDiscountAmount>0.00</ord:roundingDiscountAmount>
+                                <ord:promotionList/>
+                                <ord:freight>
+                                    <ord:chargedAmount>5.00</ord:chargedAmount>
+                                    <ord:actualAmount>5.00</ord:actualAmount>
+                                    <ord:freightRoundingAmount>0.00</ord:freightRoundingAmount>
+                                    <ord:freightTime>4</ord:freightTime>
+                                    <ord:pickupLeadTime>1</ord:pickupLeadTime>
+                                    <ord:logisticContract>NORMAL</ord:logisticContract>
+                                </ord:freight>
+                                <ord:service>false</ord:service>
+                                <ord:skuName>Produto teste ACME 02 - SERVICO</ord:skuName>
+                                <ord:productBrandName>NONE</ord:productBrandName>
+                            </ord:orderLine>
+                        </ord:orderLineList>
+                        <ord:deliveryAddress>
+                            <ord:addressId>353416818</ord:addressId>
+                            <ord:recipientNm>Infratech</ord:recipientNm>
+                            <ord:address>Avenida Andrômeda</ord:address>
+                            <ord:addressNr>123</ord:addressNr>
+                            <ord:additionalInfo>casa</ord:additionalInfo>
+                            <ord:quarter>Jardim Satélite</ord:quarter>
+                            <ord:city>São José dos Campos</ord:city>
+                            <ord:state>SP</ord:state>
+                            <ord:countryId>BR</ord:countryId>
+                            <ord:postalCd>12230088</ord:postalCd>
+                            <ord:friendlyNm>Endereço Principal</ord:friendlyNm>
+                            <ord:lift>false</ord:lift>
+                            <ord:intercom>false</ord:intercom>
+                        </ord:deliveryAddress>
+                    </ord:delivery>
+                </ord:deliveries>
+                <ord:customer>
+                    <ord:customerId>260218901</ord:customerId>
+                    <ord:documentNumber>82053356000158</ord:documentNumber>
+                    <ord:name>Infratech</ord:name>
+                    <ord:email>infratech.teste@gmail.com</ord:email>
+                    <ord:phoneMobile>1290004748</ord:phoneMobile>
+                    <ord:phoneOffice>1234897564</ord:phoneOffice>
+                    <ord:createDt>2015-05-25T11:59:35.000-03:00</ord:createDt>
+                    <ord:updateDt>2015-05-25T11:59:35.000-03:00</ord:updateDt>
+                </ord:customer>
+                <ord:billingAddress>
+                    <ord:addressId>186591402</ord:addressId>
+                    <ord:recipientNm>66</ord:recipientNm>
+                    <ord:address/>
+                    <ord:addressNr>22</ord:addressNr>
+                    <ord:additionalInfo>complemento do endereco</ord:additionalInfo>
+                    <ord:quarter/>
+                    <ord:city>Dionísio Cerqueira</ord:city>
+                    <ord:state>SC</ord:state>
+                    <ord:countryId>BR</ord:countryId>
+                    <ord:postalCd>89950000</ord:postalCd>
+                    <ord:postalCdIntl>12244170</ord:postalCdIntl>
+                    <ord:friendlyNm>Endereço Principal</ord:friendlyNm>
+                    <ord:lift>false</ord:lift>
+                    <ord:intercom>false</ord:intercom>
+                </ord:billingAddress>
+                <ord:paymentList>
+                    <ord:payment>
+                        <ord:abstractPayment>
+                            <ord:paymentType>BILL</ord:paymentType>
+                        </ord:abstractPayment>
+                    </ord:payment>
+                </ord:paymentList>
+                <ord:countDistinctSku>1</ord:countDistinctSku>
+            </ord:order>
+        </boor:integrateOrderRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
